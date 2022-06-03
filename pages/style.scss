@@ -1,0 +1,81 @@
+.container {
+  height: 100vh;
+  width: 100vw;
+  background: radial-gradient(150.6% 98.22% at 48.06% 0%, rgba(130, 71, 229, 0.6) 0%, rgba(200, 168, 255, 0) 100%), rgb(31, 33, 40);
+  background-blend-mode: overlay, normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .wrapper {
+    min-width: 500px;
+    background-color: rgb(25, 27, 31);
+    box-shadow: rgb(0 0 0 / 1%) 0px 0px 1px, rgb(0 0 0 / 4%) 0px 4px 8px, rgb(0 0 0 / 4%) 0px 16px 24px, rgb(0 0 0 / 1%) 0px 24px 32px;
+    border-radius: 20px;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      .left{
+        display: flex;
+        justify-content: flex-start;
+        .title{
+          margin: 0;
+          color: aliceblue;
+          font-size: 20px;
+          font-weight: 600;
+        }
+      }
+      .right{
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+    .body{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      .input-wrapper {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        width: 100%;
+        .ant-input{
+          margin-top: 10px;
+          height: 40px;
+          font-size: 20px;
+          background: rgb(33, 36, 41);
+          border: none;
+          color: aliceblue;
+          border-radius: 15px;
+        }
+      }
+      .radio-button{
+        margin-top: 10px;
+        color: aliceblue;
+      }
+      .button-container {
+        display:  flex;
+        width: 100%;
+        gap: 10px;
+      }
+      .button {
+        margin-top: 20px;
+        height: 40px;
+        flex: 1;
+        border-radius: 15px;
+        background-color: rgba(21, 61, 111, 0.44);
+        color: rgb(80, 144, 234);
+        border: none;
+        &:hover{
+          background-color: rgba(19, 54, 98, 0.44);
+        }
+      }
+    }
+  }
+}
